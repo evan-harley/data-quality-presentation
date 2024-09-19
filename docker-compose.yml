@@ -6,13 +6,15 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    user: node
     environment:
       # Internal server error messages will not send stacktrace to the browser in production
+      - NODE_ENV=development
       - TZ=America/Vancouver
     # Points to a file with the sensitive environment variables
     restart: unless-stopped
     ports:
-      - 3001:80
+      - 3001:3000
     networks:
       - frontend
 networks:
