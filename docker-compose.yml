@@ -14,7 +14,7 @@ services:
     # Points to a file with the sensitive environment variables
     restart: unless-stopped
     ports:
-      - 3000:3000
+      - 3000:80
     networks:
       - frontend
 networks:
