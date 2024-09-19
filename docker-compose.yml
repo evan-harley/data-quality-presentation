@@ -6,7 +6,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    user: node
     environment:
       # Internal server error messages will not send stacktrace to the browser in production
       - NODE_ENV=development
