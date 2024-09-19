@@ -1,6 +1,6 @@
 services:
   data-quality-presentation:
-    container_name: web
+    container_name: presentation
     # The name of the image that will be created when building this container
     image: data-quality-presentation
     build:
